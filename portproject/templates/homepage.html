@@ -2,37 +2,27 @@
 
 
 {% block body %}
-
-
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#7952b3">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
   <body>
 
-
+  <div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('https://cache.desktopnexus.com/cropped-wallpapers/2616/2616106-1366x768-[DesktopNexus.com].jpg?st=aNFPI_hODyLUuWxQFz3n2w&e=1669818412');
+      height: 400px;
+    "
+  >
+    <div class="mask" style="background-color:;">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3 ">Olá mundo!</h1>
+          <h5 class="mb-3">Eu sou Lucas Comaru.</h5>
+          <a class="btn btn-outline-light btn-lg" href="#!" role="button"
+          >Saiba mais</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
@@ -57,25 +47,18 @@
 <main>
 
 
-  <div class="container marketing">
+  <div class="container marketing p-5">
 
 
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Sobre mim</h2>
-        <p>Sou novo na área e procuro a minha primeira oportunidade no mercado</p>
-        <p><a class="btn btn-secondary" href="#">Ver mais &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="{{ contato }}" width="100" height="100">
 
         <h2>Contato</h2>
         <p>lucascomaru20@gmail.com</p>
       </div>
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="{{ github }}" width="100" height="100">
 
         <h2>Experiências</h2>
         <p>Você pode acompanhar alguns de meus outros trabalhos no Github</p>
@@ -90,11 +73,12 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Projeto Python Birds
-        <p class="lead ">Projeto de exemplificação de criação do jogo Angry Birds</p>
+        <h2 class="featurette-heading">Sobre mim
+        <p class="lead ">Meu nome é Lucas Comaru</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img src="{{ foto_perfil }}"
+        width="400px" height="700">
 
       </div>
     </div>
@@ -103,21 +87,35 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading" >Projeto Djangoflix
-        <p class="lead">Projeto de criação do netflix do 0 com Python</p>
+        <h2 class="featurette-heading" >Cursos
+        <p class="lead">Os cursos que eu fiz para melhora das minhas habilidades foram:
+        </p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="{{ cursos}}" width="200" height="200">
       </div>
+
     </div>
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading"> Projeto Automação de indicadores
-        <p class="lead">O Bagulho é doido</p>
+        <h2 class="featurette-heading"> Projetos
+        <p class="lead">Projetos aqui</p>
+      </div>
+      <div class="col-md-5">
+        <img src="{{ projetos }}" width="400" height="400">
+
+      </div>
+          <!-- /END THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+    </div>
+     <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"> Vamos trabalhar juntos?
+        <p class="lead">Informações aqui</p>
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
@@ -127,7 +125,7 @@
 
     <hr class="featurette-divider">
 
-    <!-- /END THE FEATURETTES -->
+
 
   </div><!-- /.container -->
 
