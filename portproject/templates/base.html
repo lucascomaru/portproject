@@ -16,6 +16,23 @@
 {% block body %}
 {% endblock %}
 
+    <script>
+        const nav = document.querySelector('nav')
+
+        document.addEventListener("scroll",e=>{
+            if(scrollY>100){
+                if(scrollY>window.innerHeight){
+                nav.classList.add('invisible')
+            }else{
+                nav.classList.add('bg-gray-900')
+                nav.classList.remove('invisible')
+            }
+            }else{
+                nav.classList.remove('bg-gray-900')
+                nav.classList.remove('invisible')
+            }
+        })
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

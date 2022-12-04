@@ -9,5 +9,6 @@ def home ():
     contato = url_for('static', filename='images/contato.png')
     cursos = url_for('static', filename='images/cursos.png')
     projetos = url_for('static', filename='images/projetos.png')
+    linkedin = url_for('static', filename='images/linkedin.png')
     return render_template('homepage.html', foto_perfil=foto_perfil, github=github, contato=contato
-                           ,cursos=cursos, projetos=projetos)
+                           ,cursos=cursos, projetos=projetos, linkedin=linkedin)
